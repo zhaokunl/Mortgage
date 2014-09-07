@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/red"
+     >
+
+    <ScrollView
+        android:id="@+id/scroll_id"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical" >
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:shrinkColumns="*"
+            android:stretchColumns="*" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                 >
+
+                <TextView
+                    android:id="@+id/textView1_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="Purchase Price" />
+
+                <EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:digits="0123456789.,"
+                    android:ems="10"
+                    android:inputType="numberDecimal" />
+
+                <requestFocus />
+
+                <TextView
+                    android:id="@+id/textView1_2"
+                    android:layout_width="20dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="$" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                 >
+
+                <TextView
+                    android:id="@+id/textView2_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Down Payment" />
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:digits="0123456789.,"
+                    android:ems="10"
+                    android:inputType="numberDecimal" >
+                </EditText>
+
+                <TextView
+                    android:id="@+id/textView2_2"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="%" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 >
+
+                <TextView
+                    android:id="@+id/textView3_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Mortage Term"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/editText3"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:digits="0123456789.,"
+                    android:ems="10"
+                    android:inputType="numberDecimal" >
+                </EditText>
+
+                <TextView
+                    android:id="@+id/textView3_2"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="years" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 >
+
+                <TextView
+                    android:id="@+id/textView4_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Interest Rate"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/editText4"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:digits="0123456789.,"
+                    android:ems="10"
+                    android:inputType="numberDecimal" >
+                </EditText>
+
+                <TextView
+                    android:id="@+id/textView4_2"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="%" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 >
+
+                <TextView
+                    android:id="@+id/textView5_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Property Tax"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/editText5"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:digits="0123456789.,"
+                    android:ems="10"
+                    android:inputType="numberDecimal" >
+                </EditText>
+
+                <TextView
+                    android:id="@+id/textView5_2"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="$ per year" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 >
+
+                <TextView
+                    android:id="@+id/textView6_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Property Insurance"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/editText6"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:digits="0123456789.,"
+                    android:ems="10"
+                    android:inputType="numberDecimal" >
+                </EditText>
+
+                <TextView
+                    android:id="@+id/textView6_2"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="$ per year" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                 >
+
+                <TextView
+                    android:id="@+id/textView7_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="First Payment Date"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/months" />
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/years" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                 >
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Calculate" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>
